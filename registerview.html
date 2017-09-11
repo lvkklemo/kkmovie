@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="library/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        .main{
+            /*margin-top: 10px;*/
+        }
+
+        .main .avatar{
+            width: 80px;
+            height: 80px;
+            margin: 70px auto 50px;
+            background-image: url("register/register_top_icon@2x.png");
+            background-size: 80px 80px;
+            background-repeat: no-repeat;
+        }
+        .main .phoneNum{
+            width: 100%;
+            height: 40px;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-top: 12px;
+        }
+
+        .main .phoneNum .left{
+            flex: 0 0 20px;
+            height: 24px;
+            line-height: 26px;
+            /*background: palegreen;*/
+        }
+
+
+        .main .phoneNum .left span{
+            background: url("register/phoneIconOn@2x.png");
+            display: inline-block;
+            width: 14px;
+            height: 24px;
+            background-size: 14px 24px;
+            background-repeat: no-repeat;
+        }
+        .main .vertifycode .left span{
+            background: url("register/codeIconOn@2x.png");
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+        }
+        .main .psd01 .left span{
+            background: url("register/passwordIconOn@2x.png");
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+        }
+        .main .phoneNum .left input{
+            display: inline-block;
+            width: 1000px;
+            height: 30px;
+        }
+        .main .phoneNum .right{
+            flex: 1;
+            height: 30px;
+            background: purple;
+        }
+        .main .phoneNum .right input{
+            width: 100%;
+            height: 30px;
+            border: none;
+        }
+
+        .main .phoneNum .line{
+            position: absolute;
+            bottom: 1px;
+            left: 30px;
+            right: 30px;
+            height: 1px;
+            background: #009eff;
+        }
+
+        .btn-default{
+            background: #009eff;
+            width: 200px;
+            margin: 40px auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main">
+
+    <div class="avatar">
+    </div>
+
+    <div class="phoneNum">
+        <div class="left">
+            <span></span>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="请输入姓名">
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <div class="phoneNum vertifycode">
+        <div class="left">
+            <span></span>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="验证码">
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <div class="phoneNum psd01">
+        <div class="left">
+            <span></span>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="新密码">
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <div class="phoneNum psd01">
+        <div class="left">
+            <span></span>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="确认新密码">
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <button type="button" class="btn btn-default">Left</button>
+</div>
+</body>
+</html>

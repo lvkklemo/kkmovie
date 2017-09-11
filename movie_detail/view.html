@@ -1,0 +1,44 @@
+<style>
+    .jumbotron{
+        position: relative;
+        padding-top: 20px;
+        margin-top: 0;
+    }
+    .jumbotron a{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .jumbotron img{
+        margin: 0 auto;
+        text-align: center
+    ;
+    }
+    .jumbotron p{
+       margin-top: 20px;
+        font-size: 15px;
+    }
+
+
+</style>
+
+<div class="jumbotron">
+    <a href="{{movie.alt}}">MORE</a>
+    <h4>{{movie.title}}</h4>
+    <img ng-src="{{movie.images.large}}" alt="{{movie.images.title}}">
+    <p>{{movie.summary}}</p>
+</div>
+
+<div class="mask" ng-show="loading">
+    <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+</div>
